@@ -1,0 +1,57 @@
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.color-tile {
+    font-weight: normal;
+}
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+#orange {
+    color: orange;
+}
+
+#green {
+    color: green;
+}
+
+#yellow {
+    color: yellow;
+}
+
+#purple {
+    color: purple;
+}
+
+#turquoise {
+    color: turquoise;
+}
+
+#pink {
+    color: pink;
+}
+
+#gray {
+    color: gray;
+}
+
+#brown {
+    color: brown;
+}
+
+#white {
+    color: white;
+    text-shadow: 0.1em 0.1em lightgray;
+}
+
+img[alt="white"] {
+    border: 1px solid lightgray;
+}
