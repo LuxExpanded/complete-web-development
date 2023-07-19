@@ -51,6 +51,8 @@
               gap: 20px;
               list-style: none;
               justify-content: space-between;
+              padding: 0;
+              margin: 0;
             }
             .plan-button {
               background-color: #ff6600;
@@ -58,6 +60,7 @@
               border: none;
               border-radius: 3px;
               padding: 7px;
+              margin-top: 1rem;
             }
     }
 /*Desktop*/
@@ -66,8 +69,25 @@
       .pricing-container {
         display: flex;
         flex-direction: row;
-        gap: 30px;
-        justify-content: space-around;
+        gap: 2rem;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 40px 10% 40px;
+      }
+      .pricing-plan {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 5px;
+        max-width: 400px;
+        flex: 1;
+        height: 300px;
+        text-align: center;
+        position: relative;
+        padding: 10px;
       }
       .plan-title {
                 margin: 10px;
@@ -79,19 +99,7 @@
                 font-size: 3rem;
                 font-weight: 900;
             }
-      .pricing-plan {
-        background-color: #f2f2f2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        border-radius: 5px;
-        flex-basis: 400px;
-        height: 300px;
-        text-align: center;
-        position: relative;
-        padding: 10px;
-      }
+      
       .plan-features {
         display: flex;
         flex-direction: column;
@@ -99,6 +107,8 @@
         justify-content: space-between;
         gap: 20px;
         position: relative;
+        padding: 0;
+        margin: 0;
       }
       .plan-button {
         background-color: #ff6600;
@@ -106,6 +116,7 @@
         border: none;
         border-radius: 3px;
         padding: 7px;
+        margin-top: 1rem;
       }
       
     }
