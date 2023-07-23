@@ -7,6 +7,28 @@
     /* Write your code here */
     /* Each square should be 100px by 100px */
     /* My colours for white: #f0d9b5, black: #b58863 */
+    .container {
+      display: grid;
+      gap: 0;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      border: 1px solid black;
+      position: relative;
+      padding: 0;
+      max-width: min-content;
+    }
+    .white, .black {
+      height: 100px;
+      width: 100px;
+      margin: 0;
+      
+    }
+    .black {
+      background-color: royalblue;
+    }
+    .white {
+      background-color: gold;
+    }
   </style>
 </head>
 
