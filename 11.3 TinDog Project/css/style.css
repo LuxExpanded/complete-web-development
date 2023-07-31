@@ -31,11 +31,3 @@
   border-radius: 50%;
 }
 
-#title {
-  height: 100vh;
-}
-
-img[src="./images/iphone.png"] {
-  padding-top: 5px;
-  padding-bottom: 0;
-}
