@@ -1,0 +1,18 @@
+h1 {
+  color: red;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.huge {
+  font-size: 10rem;
+  background-color: aliceblue;
+  color: gainsboro;
+  border: 3px dashed chartreuse;
+  font-weight: bolder;
+  text-align: center;
+  border-left: 0;
+  border-right: 0;
+}

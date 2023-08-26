@@ -11,7 +11,7 @@ function getMilk(money) {
     console.log("moveRight");
     console.log("moveRight");
     
-    console.log("Buy " + calcBottles(money/1.5) + " bottles of milk.");
+    console.log("Buy " + calcBottles(money, 1.5) + " bottles of milk.");
     console.log("moveLeft");
     console.log("moveLeft");
     console.log("moveDown");
