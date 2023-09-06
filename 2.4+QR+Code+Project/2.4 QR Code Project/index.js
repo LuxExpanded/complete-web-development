@@ -19,7 +19,7 @@ inquirer
       });
     
     var qr_svg = qr.image(url);
-    qr_svg.pipe(fs.createWriteStream('myQrCode.png'));
+    qr_svg.pipe(fs.createWriteStream('myQRCode.png'));
   })
   .catch((error) => {
     if (error.isTtyError) {
