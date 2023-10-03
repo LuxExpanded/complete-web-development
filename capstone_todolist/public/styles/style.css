@@ -1,0 +1,14 @@
+.container, .list, .heading, .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    height: 1.5rem;
+}
+

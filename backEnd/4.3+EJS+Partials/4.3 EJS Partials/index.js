@@ -2,6 +2,7 @@ import express from "express";
 
 const app = express();
 const port = 3000;
+app.use(express.static("public"));
 
 /* Write your code here:
 Step 1: Render the home page "/" index.ejs
@@ -14,7 +15,7 @@ app.get("/", (req, res) => {
   res.render("index.ejs")
 });
 
-app.use(express.static("public"));
+
 
 app.get("/about", (req,res) => {
   res.render("about.ejs")
