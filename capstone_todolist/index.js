@@ -12,6 +12,7 @@ let daily_task = [];
 let num_task = daily_task.length;
 let work_task = [];
 let num_work = work_task.length;
+
 app.get("/", (req, res) => {
     res.render("index.ejs", {
         items: daily_task,
@@ -24,6 +25,10 @@ app.get("/work", (req, res) => {
         items_2: work_task,
         work_length: num_work
     })
+});
+
+app.get("/header", (req, res) => {
+    res.render("work.ejs", "index.ejs")
 });
 
 app.post("/", (req, res) => {

@@ -1,27 +1,34 @@
 <%-include('partials/header.ejs') %>
 <body>
     <div class="container">
-        <div class="todolist">
-            <% if locals.items_2 { %>
-                <h1>There are <% {items_2.length} %> tasks to do today!</h1>
-                <ul class="list-group">
-                <% for (i=0; i < items_2.length; i++) { %>
-                    <li>
-                        <% items_2[i] %>
-                    </li>
-                <% } %>
-                </ul>
-             <% } else{ %>
-                <h1>There are no todo items yet</h1>
-            <% } %>
-            <form action="/work" method="post">
-                <input type="text" name="task_2" id="task_2" placeholder="Create Something Todo" required>
-                <button name="submit" type="submit"><img src="public\images\plus-circle-svgrepo-com.svg" alt="plus icon" class="icon"></button>
-            </form>
-            <h1>Welcome to ToDo!</h1> 
-            <div class="list">
-
+        <div class="todolist lavender" id="border">
+            <div class="heading">
+                <% if (locals.items_2) { %>
+                    <h1>There are <%= locals.items_2.length %> work tasks to do today!</h1>
+                    <div class="work_list">
+                          <ol class="list-group list-group-numbered">
+                            <% for (i=0; i < items_2.length; i++) { %>
+                                 <li class="list-group-item list-group-item-dark">
+                                    <%= items_2[i] %>
+                                </li>
+                               
+                            <% } %>
+                        </ol>
+                    </div>
+                <% } else{ %>
+                    <h1>There are no todo items yet</h1>
+                <% }; %>
             </div>
+                    
+                      
+            <br>
+            <div class="form">
+                <form action="/work" method="post" class="enter">
+                    <input type="text" name="task_2" id="task" placeholder="Add Something Todo" required>
+                    <button name="add" type="submit"><img src="\images\plus-circle-svgrepo-com.svg" alt="plus icon" class="icon"></button>
+                </form>
+            </div>
+           
         </div>
     </div>
     

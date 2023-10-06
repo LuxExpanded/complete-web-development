@@ -1,11 +1,11 @@
 <%-include('partials/header.ejs') %>
 <body>
     <div class="container">
-        <div class="todolist">
+        <div class="todolist blue" id="border" >
             <div class="heading">
                 <% if (locals.items) { %>
-                    <h1>There are <%= locals.items.length %> tasks to do today!</h1>
-                    <div class="list">
+                    <h1>There are <%= locals.items.length %> daily tasks to do today!</h1>
+                    <div class="daily_list">
                           <ol class="list-group list-group-numbered">
                             <% for (i=0; i < items.length; i++) { %>
                                  <li class="list-group-item list-group-item-dark">
@@ -14,11 +14,12 @@
                                
                             <% } %>
                         </ol>
+                    </div>
                 <% } else{ %>
                     <h1>There are no todo items yet</h1>
                 <% }; %>
             </div>
-                    </div>
+                    
                       
             <br>
             <div class="form">

@@ -1,4 +1,4 @@
-.container, .list, .heading, .form {
+.container, .daily_list, .work_list .heading, .form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,3 +12,34 @@
     height: 1.5rem;
 }
 
+#border {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    
+}
+
+.blue {
+    background-color: aliceblue;
+}
+
+.lavender {
+    background-color: lavender;
+}
+
+.daily_list, .work_list {
+    margin-top: 15px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 2px;
+    padding-top: 15px;
+}
+
+.heading {
+    padding: 15px;
+}
+
+form {
+    padding-bottom: 15px;
+}
